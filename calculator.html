@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор BMI — SportShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🏋️ SportShop</h1>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+            <a href="checkout.html">Оформление</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="calculator.html">BMI</a>
+            <a href="todo.html">Тренировки</a>
+            <a href="product.html">Хиты</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>📊 Калькулятор индекса массы тела (ИМТ)</h1>
+        
+        <div class="calculator-box">
+            <div class="input-group">
+                <label>Вес (кг):</label>
+                <input type="number" id="weight" step="0.1" placeholder="например 75">
+            </div>
+            <div class="input-group">
+                <label>Рост (см):</label>
+                <input type="number" id="height" step="1" placeholder="например 175">
+            </div>
+            <div class="calculator-buttons">
+                <button onclick="calculateBMI()" class="btn-primary">Рассчитать</button>
+                <button onclick="clearBMI()" class="btn-secondary">Очистить</button>
+            </div>
+            
+            <div id="bmi-result" class="bmi-result"></div>
+            <div id="bmi-recommendation" class="bmi-recommendation"></div>
+            
+            <canvas id="bmi-chart" width="300" height="150" style="margin-top:20px;"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 SportShop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гантели 10 кг — SportShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🏋️ SportShop</h1>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+            <a href="checkout.html">Оформление</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="calculator.html">BMI</a>
+            <a href="todo.html">Тренировки</a>
+            <a href="product.html">Хиты</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/400x300?text=Гантели+10+кг" alt="Гантели 10 кг">
+            </div>
+            <div class="product-info">
+                <h1>Гантели разборные 10 кг (2 шт)</h1>
+                <p class="product-price">2 500 ₽</p>
+                <p class="product-description">
+                    Профессиональные разборные гантели весом 10 кг. Идеально подходят для домашних тренировок.
+                    В комплекте 2 гантели, блины 1, 2, 3 кг, замки для фиксации.
+                </p>
+                <div class="product-characteristics">
+                    <h3>Характеристики:</h3>
+                    <ul>
+                        <li>Материал: сталь с хромированным покрытием</li>
+                        <li>Вес: 10 кг (каждая)</li>
+                        <li>Длина грифа: 35 см</li>
+                        <li>Диаметр грифа: 28 мм</li>
+                    </ul>
+                </div>
+                <button onclick="addToCart({id:1, name:'Гантели 10 кг', price:2500})" class="btn-primary">Добавить в корзину</button>
+            </div>
+        </div>
+        
+        <section class="video-review">
+            <h3>Видеообзор товара</h3>
+            <video width="100%" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 SportShop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

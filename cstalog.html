@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — SportShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🏋️ SportShop</h1>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+            <a href="checkout.html">Оформление</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="calculator.html">BMI</a>
+            <a href="todo.html">Тренировки</a>
+            <a href="product.html">Хиты</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Каталог спортивных товаров</h1>
+        
+        <aside class="filters">
+            <h3>Фильтры</h3>
+            <select id="category-filter">
+                <option value="all">Все категории</option>
+                <option value="гантели">Гантели</option>
+                <option value="аксессуары">Аксессуары</option>
+                <option value="тренажеры">Тренажеры</option>
+            </select>
+        </aside>
+
+        <div class="catalog-grid" id="catalog-grid">
+            <!-- Товары загружаются из JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 SportShop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

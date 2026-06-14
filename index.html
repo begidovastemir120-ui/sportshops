@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportShop — Магазин спортивных товаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🏋️ SportShop</h1>
+            <p>Спорт для каждого</p>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+            <a href="checkout.html">Оформление</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="calculator.html">BMI</a>
+            <a href="todo.html">Тренировки</a>
+            <a href="product.html">Хиты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Спорт начинается здесь!</h2>
+            <p>Скидка 20% на первый заказ по промокоду <strong>SPORT20</strong></p>
+            <a href="catalog.html" class="btn-primary">В каталог →</a>
+        </section>
+
+        <section class="products">
+            <h2>🔥 Популярные товары</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/200x150?text=Гантели+10+кг" alt="Гантели 10 кг">
+                    <h3>Гантели 10 кг</h3>
+                    <p class="price">2 500 ₽</p>
+                    <button onclick="addToCart({id:1, name:'Гантели 10 кг', price:2500})">В корзину</button>
+                </article>
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/200x150?text=Скакалка" alt="Скакалка">
+                    <h3>Скакалка профессиональная</h3>
+                    <p class="price">300 ₽</p>
+                    <button onclick="addToCart({id:3, name:'Скакалка', price:300})">В корзину</button>
+                </article>
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/200x150?text=Коврик" alt="Коврик для йоги">
+                    <h3>Коврик для йоги</h3>
+                    <p class="price">800 ₽</p>
+                    <button onclick="addToCart({id:4, name:'Коврик для йоги', price:800})">В корзину</button>
+                </article>
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/200x150?text=Эспандер" alt="Эспандер">
+                    <h3>Эспандер резиновый</h3>
+                    <p class="price">1 200 ₽</p>
+                    <button onclick="addToCart({id:5, name:'Эспандер', price:1200})">В корзину</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Наши преимущества</h2>
+            <div class="features-grid">
+                <div class="feature">🚚 Быстрая доставка</div>
+                <div class="feature">🔄 Возврат 14 дней</div>
+                <div class="feature">💳 Оплата онлайн</div>
+                <div class="feature">🏆 Только оригинал</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 SportShop — Интернет-магазин спортивных товаров</p>
+        <p>г. Москва, ул. Спортивная, д. 10 | Тел: +7 (495) 123-45-67</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

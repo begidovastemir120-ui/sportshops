@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа — SportShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🏋️ SportShop</h1>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+            <a href="checkout.html">Оформление</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="calculator.html">BMI</a>
+            <a href="todo.html">Тренировки</a>
+            <a href="product.html">Хиты</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>📝 Оформление заказа</h1>
+        
+        <form id="order-form" onsubmit="submitOrder(event)">
+            <fieldset>
+                <legend>Личные данные</legend>
+                <label>ФИО: <input type="text" name="fio" required placeholder="Иванов Иван Иванович"></label>
+                <label>Телефон: <input type="tel" name="phone" required placeholder="+7 123 456-78-90"></label>
+                <label>Email: <input type="email" name="email" required placeholder="ivan@example.com"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Адрес доставки</legend>
+                <label>Город: <input type="text" name="city" required placeholder="Москва"></label>
+                <label>Улица: <input type="text" name="street" required placeholder="ул. Спортивная"></label>
+                <label>Дом: <input type="text" name="house" required placeholder="10"></label>
+                <label>Квартира: <input type="text" name="apartment" placeholder="42"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Способ доставки</legend>
+                <label><input type="radio" name="delivery" value="courier" required> Курьером (300 ₽)</label>
+                <label><input type="radio" name="delivery" value="pickup"> Самовывоз (бесплатно)</label>
+                <label><input type="radio" name="delivery" value="post"> Почта России (200 ₽)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Способ оплаты</legend>
+                <label><input type="radio" name="payment" value="card" required> Банковская карта</label>
+                <label><input type="radio" name="payment" value="cash"> Наличные при получении</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Комментарий</legend>
+                <textarea name="comment" rows="3" placeholder="Дополнительная информация..."></textarea>
+            </fieldset>
+
+            <button type="submit" class="btn-primary">Подтвердить заказ</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 SportShop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

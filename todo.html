@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>План тренировок — SportShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>🏋️ SportShop</h1>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+            <a href="checkout.html">Оформление</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="calculator.html">BMI</a>
+            <a href="todo.html">Тренировки</a>
+            <a href="product.html">Хиты</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>📋 План тренировок на неделю</h1>
+        
+        <div class="todo-container">
+            <div class="todo-input">
+                <input type="text" id="task-input" placeholder="Новая тренировка...">
+                <select id="priority-select">
+                    <option value="high">🔥 Высокий приоритет</option>
+                    <option value="medium">⚡ Средний приоритет</option>
+                    <option value="low">💤 Низкий приоритет</option>
+                </select>
+                <button onclick="addTask()" class="btn-primary">Добавить</button>
+            </div>
+            
+            <div class="todo-stats">
+                <span>Всего: <span id="task-count">0</span></span>
+                <span>Выполнено: <span id="completed-count">0</span></span>
+            </div>
+            
+            <ul id="task-list" class="task-list"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 SportShop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
